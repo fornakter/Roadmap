@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">My Application1</string>
+    <string name="basci">Learn the Basics</string>
+    <string name="advanced">Advanced Topics</string>
+    <string name="framework">Learn a Framework</string>
+    <string name="test">Testing your Apps</string>
+    <string name="data">Datastructures and Algorithms</string>
+    <string name="basicSynt">Basic Syntax</string>
+    <string name="variables">Variables and Data Types</string>
+    <string name="conditionals">Conditionals</string>
+    <string name="typeCasting">Type Casting, Exceptions</string>
+    <string name="func">Functions, Buildin Func</string>
+    <string name="lists">Lists, Tuples, Sets, Dictionaries</string>
+    <string name="ok">OK</string>
+    <string name="Python_Roadmap">Python Roadmap</string>
+</resources>
