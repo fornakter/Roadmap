@@ -13,17 +13,13 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        // Set value on progressbar
         val receivedIntent = intent
         val progressBar = findViewById<ProgressBar>(R.id.progressBar)
-        val value = receivedIntent.getIntExtra("wartosc", 0)
+        val value = receivedIntent.getIntExtra("value", 0)
         progressBar.progress = value
 
-
-//        val message = intent.getStringExtra("text_to_send")
-//
-//        val textView = findViewById<ProgressBar>(R.id.progressBar).apply {
-//            progress = message!!.toInt()
-//        }
 
         // 'handle' for button'
         val learn_button = findViewById<Button>(R.id.bLearn)
@@ -33,13 +29,9 @@ class MainActivity : AppCompatActivity() {
 
             val change_view = Intent(this, LearnBasics::class.java)
             startActivity(change_view)
+
         }
 
-        val data_button = findViewById<Button>(R.id.bData)
-        val progresBar1 = findViewById<ProgressBar>(R.id.progressBar)
-        data_button.setOnClickListener{
-            progresBar1.progress += 1
-        }
 
 
     }
