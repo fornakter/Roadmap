@@ -13,4 +13,38 @@
     <string name="lists">Lists, Tuples, Sets, Dictionaries</string>
     <string name="ok">OK</string>
     <string name="Python_Roadmap">Python Roadmap</string>
+
+    <string name="array">Arrays and Linked Lists</string>
+    <string name="heops">Heops, Stacks and Queues</string>
+    <string name="hash">Hash Tables</string>
+    <string name="binary">Binary Search Trees</string>
+    <string name="recursion">Recursion</string>
+    <string name="sort">Sort Algorithms</string>
+
+    <string name="inter">Iterators</string>
+    <string name="regex">RegEx</string>
+    <string name="deco">Decorators</string>
+    <string name="lambda">Lambdas</string>
+    <string name="oop">OOP</string>
+    <string name="modules">Modules</string>
+    <string name="pack">Package Managers</string>
+
+    <string name="synch">Synchronous</string>
+    <string name="asynch">Asynchronous</string>
+    <string name="api">FastAPI</string>
+
+    <string name="django">Django</string>
+    <string name="flask">Flask</string>
+    <string name="pyramid">Pyramid</string>
+    <string name="synchbutt">Back to Frameworks</string>
+
+    <string name="gevent">gevent</string>
+    <string name="aiohttp">aiohttp</string>
+    <string name="tornado">Tornado</string>
+    <string name="sanic">Sanic</string>
+
+    <string name="doctest">doctest</string>
+    <string name="nose">nose</string>
+    <string name="pytest">pytest</string>
+    <string name="unitest">unittest/pyUnit</string>
 </resources>
