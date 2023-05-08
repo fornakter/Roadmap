@@ -37,11 +37,19 @@ class Framework : AppCompatActivity() {
             // Change to synch screen
             val changeView = Intent(this, Synch::class.java)
             startActivity(changeView)
+
+            val editor = sharedPreferences.edit()
+            editor.putBoolean("framebox1", frameBox.isChecked)
+            editor.apply()
         }
         asynchButton.setOnClickListener {
             // Change to asynch screen
             val changeView = Intent(this, Asynch::class.java)
             startActivity(changeView)
+
+            val editor = sharedPreferences.edit()
+            editor.putBoolean("framebox1", frameBox.isChecked)
+            editor.apply()
         }
 
     }

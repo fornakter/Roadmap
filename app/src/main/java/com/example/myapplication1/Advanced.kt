@@ -11,7 +11,7 @@ class Advanced : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.advanced)
-        // 'handle' for save checkbox
+
         val sharedPreferences = getSharedPreferences("app_preferences", Context.MODE_PRIVATE)
 
         // Load checkbox status at start
@@ -26,14 +26,16 @@ class Advanced : AppCompatActivity() {
         val advbox3 = findViewById<CheckBox>(R.id.advBox3)
         val advbox4 = findViewById<CheckBox>(R.id.advBox4)
 
-
         // Set checkbox status
         advbox1.isChecked = checkbox1Value
         advbox2.isChecked = checkbox2Value
         advbox3.isChecked = checkbox3Value
         advbox4.isChecked = checkbox4Value
 
+        val advButtOOP = findViewById<Button>(R.id.advButtOOP)
+        val advButtonPack = findViewById<Button>(R.id.advButtonPack)
 
+        // 'handle' for save checkbox
         val learnButton = findViewById<Button>(R.id.advButtOK)
         learnButton.setOnClickListener {
             // Change screen to #1
@@ -46,8 +48,33 @@ class Advanced : AppCompatActivity() {
             editor.putBoolean("advbox2", advbox2.isChecked)
             editor.putBoolean("advbox3", advbox3.isChecked)
             editor.putBoolean("advbox4", advbox4.isChecked)
-
             editor.apply()
         }
+
+        advButtOOP.setOnClickListener{
+            val changeView = Intent(this, OOP::class.java)
+            startActivity(changeView)
+
+            // save checkBox status
+            val editor = sharedPreferences.edit()
+            editor.putBoolean("advbox1", advbox1.isChecked)
+            editor.putBoolean("advbox2", advbox2.isChecked)
+            editor.putBoolean("advbox3", advbox3.isChecked)
+            editor.putBoolean("advbox4", advbox4.isChecked)
+            editor.apply()
+        }
+        advButtonPack.setOnClickListener{
+            val changeView = Intent(this, PackageManagers::class.java)
+            startActivity(changeView)
+
+            // save checkBox status
+            val editor = sharedPreferences.edit()
+            editor.putBoolean("advbox1", advbox1.isChecked)
+            editor.putBoolean("advbox2", advbox2.isChecked)
+            editor.putBoolean("advbox3", advbox3.isChecked)
+            editor.putBoolean("advbox4", advbox4.isChecked)
+            editor.apply()
+        }
+
     }
 }

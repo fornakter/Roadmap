@@ -4,86 +4,76 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Advanced">
+    tools:context=".OOP">
 
     <TextView
-        android:id="@+id/advView3"
+        android:id="@+id/textView12"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
-        android:text="@string/advanced"
+        android:text="@string/oop"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <CheckBox
-        android:id="@+id/advBox1"
+        android:id="@+id/oopBox1"
         android:layout_width="180dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="@string/inter"
+        android:text="@string/classes"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/advView3" />
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
 
     <CheckBox
-        android:id="@+id/advBox2"
+        android:id="@+id/oopBox2"
         android:layout_width="180dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="@string/regex"
+        android:text="@string/inher"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/advBox1" />
+        app:layout_constraintTop_toBottomOf="@+id/oopBox1" />
 
     <CheckBox
-        android:id="@+id/advBox3"
+        android:id="@+id/oopBox3"
         android:layout_width="180dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="@string/deco"
+        android:text="@string/methods"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/advBox2" />
+        app:layout_constraintTop_toBottomOf="@+id/oopBox2" />
 
     <CheckBox
-        android:id="@+id/advBox4"
+        android:id="@+id/oopBox4"
         android:layout_width="180dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="@string/lambda"
+        android:text="@string/builtin"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/advBox3" />
+        app:layout_constraintTop_toBottomOf="@+id/oopBox3" />
 
-    <Button
-        android:id="@+id/advButtOOP"
+    <CheckBox
+        android:id="@+id/oopBox5"
         android:layout_width="180dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="@string/oop"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.509"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/advBox4" />
-
-    <Button
-        android:id="@+id/advButtonPack"
-        android:layout_width="180dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="@string/pack"
+        android:text="@string/custom"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/advButtOOP" />
+        app:layout_constraintTop_toBottomOf="@+id/oopBox4" />
 
     <Button
-        android:id="@+id/advButtOK"
+        android:id="@+id/oopButtOk"
         android:layout_width="180dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
         android:text="@string/ok"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/advButtonPack" />
+        app:layout_constraintTop_toBottomOf="@+id/oopBox5" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
