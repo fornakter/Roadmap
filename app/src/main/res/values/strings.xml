@@ -60,4 +60,12 @@
     <string name="pypi">PyPI</string>
     <string name="pip">Pip</string>
     <string name="conda">Conda</string>
+
+    <string name="support">You can support my work by donate</string>
+    <string name="btc">3KYamLohstiQgeKTdQMe44f77bQ5cNnKiU</string>
+    <string name="eth">0x024911e68C5e9aF6793EecAB842003a8a79c08De</string>
+    <string name="email">adamfatyga@hotmail.com</string>
+    <string name="website">adam-fatyga.ddns.net</string>
+    <string name="contact">Contact:</string>
+    <string name="version">Version: 0.9</string>
 </resources>
